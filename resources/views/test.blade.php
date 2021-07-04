@@ -18,11 +18,11 @@ tr:nth-child(even) {
 <table style="width: 100% !important;">
                                 <thead>
                                 <tr>
-                                    <th>url</th>
-                                    <th>cat</th>
+                                    <th>URL</th>
+                                    <th>Category</th>
                                     @for ($i=1 ; $i<= $max_month; $i++)
-                                        <th>val1 {{ substr(date("F", mktime(0, 0, 0, $i, 10)),0,3)}}</th>
-                                        <th>val2 {{ substr(date("F", mktime(0, 0, 0, $i, 10)),0,3)}}</th>
+                                        <th>value 1 <br>({{ substr(date("F", mktime(0, 0, 0, $i, 10)),0,3)}})</th>
+                                        <th>value 2 <br>({{ substr(date("F", mktime(0, 0, 0, $i, 10)),0,3)}})</th>
                                     @endfor
 
                                 </tr>
